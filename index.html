@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modern House Design – Project Details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= COVER ================= */
+.project-cover {
+  position: relative;
+  height: 100vh;
+  background: url("https://64.media.tumblr.com/e03bcbdd84cabcab6937f8fe8305a599/4f1d9d1165f17581-b9/s540x810/a60e4dbf2302b28b8db622d70a856af5a85efa96.pnj")
+    center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/* Logo */
+.project-logo {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  z-index: 2;
+}
+
+.project-logo img {
+  height: 48px;
+}
+
+/* Cover Text */
+.cover-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.cover-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.cover-content span {
+  display: block;
+  margin-top: 12px;
+  font-size: 20px;
+  color: #ddd;
+}
+
+/* ================= CONTENT ================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+/* LEFT TITLE – RIGHT CONTENT */
+.text-row {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 80px;
+}
+
+.text-row h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.text-content p,
+.text-content ul {
+  max-width: 820px;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+/* ================= IMAGE GRIDS ================= */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.final-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.image-grid img,
+.final-gallery img {
+  width: 100%;
+  display: block;
+}
+
+/* ================= FOOTER ================= */
+.site-footer {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-left h3 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer-left p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-center {
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-right svg {
+  width: 18px;
+  height: 18px;
+  fill: #bbb;
+  transition: fill 0.3s ease;
+}
+
+.footer-right a:hover svg {
+  fill: #fff;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .project-logo {
+    top: 20px;
+    left: 20px;
+  }
+
+  .cover-content h1 {
+    font-size: 36px;
+  }
+
+  .text-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .final-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
+  .footer-right a {
+    margin: 0 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= COVER ================= -->
+<section class="project-cover">
+  <div class="project-logo">
+    <img src="https://64.media.tumblr.com/53f0a2468d164ff41d3b183a954e44ee/4f1d9d1165f17581-33/s540x810/3b5156acab01483ebc9cd20c5264d511735e1b1b.pnj" alt="Logo">
+  </div>
+
+  <div class="cover-content">
+    <h1>
+      Modern House Design
+      <span>Residential Planning & Elevation</span>
+    </h1>
+  </div>
+</section>
+
+<div class="container">
+
+  <section class="section text-row">
+    <h2>Project overview</h2>
+    <div class="text-content">
+      <p>
+        This project presents a modern residential house design focused on comfort,
+        functionality, and contemporary aesthetics. The design integrates well-planned
+        interior spaces with an elegant exterior elevation to create a welcoming and
+        practical living environment.
+      </p>
+    </div>
+  </section>
+
+  <section class="section text-row">
+    <h2>Details</h2>
+    <div class="text-content">
+      <ul>
+        <li><strong>Project Type:</strong> Residential House</li>
+        <li><strong>Design Scope:</strong> House Planning & Exterior Design</li>
+        <li><strong>Style:</strong> Modern / Contemporary</li>
+        <li><strong>Focus:</strong> Functional layout, comfort, and visual appeal</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section text-row">
+    <h2>Specifications</h2>
+    <div class="text-content">
+      <ul>
+        <li>2 Bedrooms</li>
+        <li>Modern Kitchen</li>
+        <li>Living Room</li>
+        <li>Swimming Pool</li>
+        <li>Garage</li>
+        <li>Open and well-lit interior spaces</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="image-grid">
+      <img src="https://64.media.tumblr.com/dcede04ba52518813f33bd238b828706/4f1d9d1165f17581-7b/s540x810/8642d5f01864e3237b21d4f3ad8a053085809cdf.pnj">
+      <img src="https://64.media.tumblr.com/3c4db539b71f9b37702d81a223105aa0/4f1d9d1165f17581-33/s540x810/01fc9f46f9631555c0c873784a0964bafa943789.pnj">
+      <img src="https://64.media.tumblr.com/bf4513c1fc59cc3345a3e973ba7e6306/4f1d9d1165f17581-07/s540x810/cc8f97d38f2c580c3c7ffbde41248a32e3c955e9.pnj">
+      <img src="https://64.media.tumblr.com/aad1501ac5e94ac88bf6811f8d6102ef/4f1d9d1165f17581-f6/s540x810/f31cf369f517afd1c12150755fcd893d01e0ed40.pnj">
+    </div>
+  </section>
+
+  <section class="section text-row">
+    <h2>My sketches</h2>
+    <div class="text-content image-grid">
+      <img src="https://64.media.tumblr.com/ec7062d2785d6ee1ffc52b3f8a40c0b7/4f1d9d1165f17581-0b/s540x810/a19ae2052beedfcb8e9f72dcbf9302827c27f174.pnj">
+      <img src="https://64.media.tumblr.com/9fd10adb4310a3b80a319bce6d8782dc/4f1d9d1165f17581-dc/s540x810/d1bb07f8c646e1bad90975c50bbb6d165a033f17.pnj">
+    </div>
+  </section>
+
+  <section class="section text-row">
+    <h2>Results</h2>
+    <div class="text-content">
+      <ul>
+        <li>Functional and comfortable residential layout</li>
+        <li>Clean and balanced modern elevation</li>
+        <li>Well-defined private and common living spaces</li>
+        <li>Clear visualization for better design understanding and approval</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="final-gallery">
+      <img src="https://64.media.tumblr.com/e03bcbdd84cabcab6937f8fe8305a599/4f1d9d1165f17581-b9/s540x810/a60e4dbf2302b28b8db622d70a856af5a85efa96.pnj">
+      <img src="https://64.media.tumblr.com/967d1ad781140609088668b55d286b51/4f1d9d1165f17581-63/s500x750/9a157dd56059d1f44d4bf363f50d5805419b4f0c.pnj">
+      <img src="https://64.media.tumblr.com/35d504097362b1540e42f917b71e5982/4f1d9d1165f17581-c4/s540x810/a6c0eb0a3cc4e7b22b8a9e372a6b5803557319bd.pnj">
+      <img src="https://64.media.tumblr.com/a3d508d7615e46101b7c3936b8a77102/4f1d9d1165f17581-58/s500x750/0345815a1d7ca1a5f17cb120c0fd5891684b50cf.pnj">
+      <img src="https://64.media.tumblr.com/421826f6e3834ddf1734a3f9cc857e48/4f1d9d1165f17581-37/s540x810/72f943756987813dcf8ed3dc794158e5c8ddb1ba.pnj">
+      <img src="https://64.media.tumblr.com/c7d14d21d8d0c39aac77e48387c15425/4f1d9d1165f17581-fc/s500x750/960631da99604e260a492ea4820cf554c448653a.pnj">
+      <img src="https://64.media.tumblr.com/5f8751b39e116b8b21d084a58e320faf/4f1d9d1165f17581-7c/s540x810/4a82a302e89ca307d1b499f668b66f24f8e07876.pnj">
+      <img src="https://64.media.tumblr.com/28626172b5acdbe3de18fbbd7aac7863/4f1d9d1165f17581-62/s540x810/f0fd0d886e8abdcf83a288f0c0edd3d3520d9ad9.pnj">
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <h3>Loganathan M</h3>
+      <p>Interior Designer · India</p>
+    </div>
+
+    <div class="footer-center">
+      © 2026 Loganathan M
+    </div>
+
+    <div class="footer-right">
+      <a href="https://www.instagram.com/lk_interior_design2" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/loganathan-m-219266288" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.48 2.48 0 1 1 5 8.46 2.48 2.48 0 0 1 4.98 3.5zM3 9h4v12H3zm7 0h3.8v1.7h.05a4.17 4.17 0 0 1 3.75-2.06c4 0 4.7 2.63 4.7 6.05V21h-4v-5.3c0-1.26 0-2.9-1.77-2.9s-2.04 1.38-2.04 2.8V21h-4z"/></svg>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
+
